@@ -26,6 +26,7 @@ function SignUp({ navigateTo }) {
     confirmPassword: ''
   });
 
+  
   const handleChange = (e) => {
     setForm({
       ...form,
