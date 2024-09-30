@@ -1,3 +1,4 @@
+// src/components/SignIn.js
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
@@ -8,7 +9,7 @@ function SignIn() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Simple login logic here
+    // Basic form handling logic
     if (email && password) {
       alert('Login Successful!');
       navigate('/main');

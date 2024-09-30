@@ -1,3 +1,4 @@
+// src/components/ForgotPassword.js
 import React, { useState } from 'react';
 
 function ForgotPassword() {
@@ -5,7 +6,7 @@ function ForgotPassword() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    alert('Password reset link sent to ' + email);
+    alert(`Password reset link sent to ${email}`);
   };
 
   return (
@@ -14,7 +15,7 @@ function ForgotPassword() {
       <form onSubmit={handleSubmit}>
         <input
           type="email"
-          placeholder="Email"
+          placeholder="Enter your email"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
           required

@@ -1,3 +1,4 @@
+// src/components/SignUp.js
 import React, { useState } from 'react';
 
 function SignUp() {
@@ -8,7 +9,7 @@ function SignUp() {
   const handleSubmit = (e) => {
     e.preventDefault();
     if (password !== confirmPassword) {
-      alert('Passwords do not match');
+      alert('Passwords do not match!');
     } else {
       alert('Sign Up Successful!');
     }
